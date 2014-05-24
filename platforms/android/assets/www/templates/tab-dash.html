@@ -1,5 +1,21 @@
 <ion-view title="Dashboard">
-  <ion-content class="has-header padding">
-    <h1>Dash</h1>
+  <ion-content class="has-header">
+	  <label class="item item-input">
+	    <i class="icon ion-search placeholder-icon"></i>
+	    <input type="text" placeholder="Search" ng-model="query">
+	  </label>
+    <ion-list>
+	  <ion-item ng-repeat="item in items | filter: query">
+	    {{item.title}}
+	    <ion-option-button class="button-balanced"
+                       ng-click="share(item)">
+	      <i class="icon ion-ios7-telephone"></i>
+	    </ion-option-button>
+	    <ion-option-button class="button-calm"
+	                       ng-click="edit(item)">
+	      <i class="icon ion-email"></i>
+	    </ion-option-button>
+	  </ion-item>
+	</ion-list>
   </ion-content>
 </ion-view>
