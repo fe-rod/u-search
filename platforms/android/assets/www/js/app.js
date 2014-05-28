@@ -43,11 +43,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-dash': {
           templateUrl: 'templates/tab-dash.html',
-          controller: 'DashCtrl'
+          controller: 'StoresCtrl'
         }
       }
     })
-
+    .state('tab.store-detail', {
+      url: '/store/:storeId',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/store-detail.html',
+          controller: 'StoreDetailCtrl'
+        }
+      }
+    })
+    .state('tab.map-view', {
+      url: '/map/:storeId',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/map-view.html',
+          controller: 'MapCtrl'
+        }
+      }
+    })
     .state('tab.friends', {
       url: '/friends',
       views: {

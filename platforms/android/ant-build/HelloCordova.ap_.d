@@ -24,9 +24,11 @@
 /home/fede/Desktop/u-search/platforms/android/assets/www/index.html \
 /home/fede/Desktop/u-search/platforms/android/assets/www/lib \
 /home/fede/Desktop/u-search/platforms/android/assets/www/img/ionic.png \
+/home/fede/Desktop/u-search/platforms/android/assets/www/templates/map-view.html \
 /home/fede/Desktop/u-search/platforms/android/assets/www/templates/tab-friends.html \
 /home/fede/Desktop/u-search/platforms/android/assets/www/templates/friend-detail.html \
 /home/fede/Desktop/u-search/platforms/android/assets/www/templates/tabs.html \
+/home/fede/Desktop/u-search/platforms/android/assets/www/templates/store-detail.html \
 /home/fede/Desktop/u-search/platforms/android/assets/www/templates/tab-dash.html \
 /home/fede/Desktop/u-search/platforms/android/assets/www/templates/tab-account.html \
 /home/fede/Desktop/u-search/platforms/android/assets/www/js/app.js \

@@ -1,18 +1,18 @@
-<ion-view title="Dashboard">
+<ion-view title="Stores">
   <ion-content class="has-header">
 	  <label class="item item-input">
 	    <i class="icon ion-search placeholder-icon"></i>
 	    <input type="text" placeholder="Search" ng-model="query">
 	  </label>
     <ion-list>
-	  <ion-item ng-repeat="item in items | filter: query">
-	    {{item.title}}
+	  <ion-item ng-repeat="store in stores | filter: query" type="item-text-wrap" href="#/tab/store/{{store.id}}">
+	    {{store.name}}
 	    <ion-option-button class="button-balanced"
-                       ng-click="share(item)">
+                       ng-click="share(store)">
 	      <i class="icon ion-ios7-telephone"></i>
 	    </ion-option-button>
 	    <ion-option-button class="button-calm"
-	                       ng-click="edit(item)">
+	                       ng-click="edit(store)">
 	      <i class="icon ion-email"></i>
 	    </ion-option-button>
 	  </ion-item>
